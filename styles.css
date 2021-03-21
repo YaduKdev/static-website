@@ -1,0 +1,333 @@
+/* Setting fade transition and default settings */
+body {
+    color: #000;
+    background-color: #ffffff;
+    transition: background-color 1s ease;
+  }
+  
+  /* panel styles */
+  .panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+  }
+  
+  /* colours */
+  .color-violet {
+    background-color: #7A4EAB;
+  }
+  .color-indigo {
+    background-color: #4332CF;
+  }
+  .color-blue {
+    background-color: #2F8FED;
+  }
+  .color-green {
+    background-color: #4DCF42;
+  }
+  .color-yellow {
+    background-color: #FAEB33;
+  }
+  .color-orange {
+    background-color: #F19031;
+  }
+  .color-red {
+    background-color: #F2293A;
+  }
+  
+  /* styling for demo, can ignore */
+  body {
+    text-align: center;
+    font-size: 120%;
+    line-height: 1.618;
+  }
+  h1, h2 {
+    font-size: 3em;
+    letter-spacing: -0.05em;
+    line-height: 1.1;
+  }
+
+  p {
+    max-width: 30em;
+    /* margin-bottom: 1.618em; */
+    margin: 0 auto 1.618em auto;
+  }
+
+  a {
+    font-size: 40px;
+    margin-right: 30px;
+    transition-duration: 300ms;
+  }
+
+  .fb {
+      color: #576d98;
+  }
+
+  .tweet {
+    color: #46a1d9;
+  }
+
+  .link-in {
+    color: #286e8e;
+  }
+
+
+  .fb:hover {
+      color: #4267B2;
+  }
+
+  .tweet:hover {
+      color: #1DA1F2;
+  }
+
+  .link-in:hover {
+      color: #0e76a8;
+  }
+
+  .profile-img {
+      width: 242.5px;
+      height: 193.5px;
+      /* border-bottom: 3px solid gray; */
+      /* position: absolute;
+      top: 185px;
+      left: 550px; */
+      animation: transitionIn 2s ease-in;
+  }
+
+ @keyframes transitionIn {
+     from {
+         transform: translateY(-1000px);
+     }
+     to {
+       transform: translateY(0px);
+     }
+ }
+
+ .cover-para {
+     margin-top: 0;
+     position: relative;
+     left: -1000px;
+    animation: transitionBy 2s ease-in-out 3s 1 forwards;
+ }
+
+ @keyframes transitionBy {
+     from {
+         left:-1000px;
+     }
+     to {
+      position:static;
+      left: 1000px;
+     }
+ }
+
+ h1 {
+    visibility: hidden;
+    animation: transitionOf 2s ease-in-out 2s 1 forwards;
+ }
+
+ @keyframes transitionOf {
+     from {
+        visibility: visible;
+        transform: scale(0);
+     }
+     to {
+        visibility: visible;
+        transform: scale(1);
+     }
+ }
+ 
+ span {
+     color: #fd5e53;
+ }
+
+ /* .empty {
+     height: 167px;
+ } */
+
+ .skills img {
+   width: 245px;
+   height: 245px;
+ }
+
+ .certifications img {
+  width: 245px;
+  height: 245px;
+}
+
+ .projects img {
+  width: 245px;
+  height: 245px;
+}
+
+ .socials img {
+  width: 245px;
+  height: 245px;
+}
+
+.certifications {
+  margin-bottom: 160px;
+}
+
+.certifications h3 {
+  color: #cb3737;
+}
+
+.certifications-list {
+  background-color: #f9fcfb;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.certifications-list a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ee6f57;
+}
+
+.certifications-list a:hover {
+  color: #cb3737;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2 {
+  font-family: 'Amatic SC', cursive;
+}
+
+p, li, a, h3 {
+  font-family: 'Josefin Slab', serif;
+}
+
+.skills h2 {
+  color: #eda42f;
+}
+
+.skills p {
+  color: #edd42f;
+}
+
+.projects h2 {
+  color: #f7f6e7;
+}
+
+.projects span {
+  color: #f16131;
+}
+
+.socials h2 {
+  color: #fa3351;
+}
+
+@media only screen and (max-width: 800px) {
+  .panel {
+    display: block;
+    margin-bottom: 160px;
+  }
+
+  .certifications {
+    margin: 0 auto 160px auto;
+  }
+
+  .links button {
+    font-size: 15px;
+    margin-right: 7px;
+  }
+}
+
+/* .social-media {
+  margin-top: 30px;
+} */
+
+/* .smoke {
+  position: absolute;
+  left: 450px;
+  top: 100px;
+  width: 500px;
+  height: 400px;
+  visibility: hidden;
+  animation: transitionOf 500ms ease-in-out 1850ms;
+}
+
+@keyframes smokey {
+  from {
+     visibility: visible;
+  }
+  to {
+     visibility: visible;
+  }
+} */
+
+button {
+  border: none;
+  background: none;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  font-size: 50px;
+  color: #1b1717;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.scroll-to-top.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.scroll-to-top:active {
+  color: #000;
+}
+
+.links button {
+  font-family: 'Amatic SC', cursive;
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#projects:hover {
+  color: #FAEB33;
+}
+
+#certifications:hover {
+  color: #FAEB33;
+}
+
+#skills:hover {
+  color: #FAEB33;
+}
+
+#skills {
+  color: #2F8FED;
+}
+
+#certifications {
+  color: #F2293A;
+}
+
+#projects {
+  color: #F19031;
+}
+
+.git-project {
+  font-size: 22px;
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+}
