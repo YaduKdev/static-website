@@ -265,9 +265,9 @@ p, li, a, h3 {
     margin: 0 auto 160px auto;
   }
 
-  .certifications {
+  /* .certifications {
     margin: 0 auto;
-  }
+  } */
 
   .links button {
     font-size: 15px;
