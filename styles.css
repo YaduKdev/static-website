@@ -16,6 +16,7 @@ body {
     font-family: sans-serif;
     /* outline: 10px solid hotpink; */
     /* turn above on to see the edge of panels */
+    margin-bottom: 120px;
   }
   
   /* colours */
@@ -270,7 +271,7 @@ p, li, a, h3 {
 
   .panel {
     display: block;
-    margin-bottom: 160px;
+    margin-bottom: 120px;
   }
 
   /* .head {
