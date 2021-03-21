@@ -8,9 +8,10 @@ body {
   /* panel styles */
   .panel {
     /* min height incase content is higher than window height */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
     align-items: center;
     font-family: sans-serif;
     /* outline: 10px solid hotpink; */
@@ -53,7 +54,7 @@ body {
   }
 
   p {
-    max-width: 30em;
+    max-width: 35em;
     /* margin-bottom: 1.618em; */
     margin: 0 auto 1.618em auto;
   }
