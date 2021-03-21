@@ -66,7 +66,7 @@ $(window).scroll(function() {
       });
     } else {
       window.scrollTo({
-        top: 1600,
+        top: 1700,
         left: 0,
         behavior: "smooth"
       });
@@ -77,7 +77,7 @@ $(window).scroll(function() {
   projectsbtn.addEventListener("click", function() {
     if (screen.width>800) {
       window.scrollTo({
-        top: 2200,
+        top: 2500,
         left: 0,
         behavior: "smooth"
       });

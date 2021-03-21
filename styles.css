@@ -89,24 +89,43 @@ body {
       color: #0e76a8;
   }
 
-  .profile-img {
-      width: 242.5px;
-      height: 193.5px;
+  .profile-bg {
+      width: 222.5px;
+      height: 222.5px;
       /* border-bottom: 3px solid gray; */
       /* position: absolute;
       top: 185px;
       left: 550px; */
-      animation: transitionIn 2s ease-in;
+      animation: transitionIn 1s ease-in;
   }
 
  @keyframes transitionIn {
      from {
-         transform: translateY(-1000px);
+         transform: scaleX(0) scaleY(0);
      }
      to {
-       transform: translateY(0px);
+       transform: scaleX(1) scaleY(1);
      }
  }
+
+ .profile-img {
+   position: absolute;
+   width: 245px;
+   height: 245px;
+   left: 45%;
+   visibility: hidden;
+   animation: transitionQ 2s ease-in 1s 1 forwards;
+ }
+
+ @keyframes transitionQ {
+  from {
+      transform: scaleX(0) scaleY(0);
+  }
+  to {
+    visibility: visible;
+    transform: scaleX(1) scaleY(1);
+  }
+}
 
  .cover-para {
      margin-top: 0;
@@ -127,17 +146,17 @@ body {
 
  h1 {
     visibility: hidden;
-    animation: transitionOf 2s ease-in-out 2s 1 forwards;
+    animation: transitionOf 300ms ease-in-out 3s 1 forwards;
  }
 
  @keyframes transitionOf {
      from {
-        visibility: visible;
-        transform: scale(0);
+        visibility: hidden;
+        transform: scaleY(0);
      }
      to {
         visibility: visible;
-        transform: scale(1);
+        transform: scaleY(1);
      }
  }
  
@@ -227,9 +246,18 @@ p, li, a, h3 {
 }
 
 @media only screen and (max-width: 800px) {
+  
+  .profile-img {
+    left: 35%;
+  }
+
   .panel {
     display: block;
     margin-bottom: 160px;
+  }
+
+  .head {
+    margin-bottom: 120px;
   }
 
   .certifications {
@@ -275,7 +303,8 @@ button {
   right: 10px;
   bottom: 10px;
   font-size: 50px;
-  color: #1b1717;
+  /* color: #1b1717; */
+  color: #643E46FF;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   outline: none;
@@ -291,7 +320,8 @@ button {
 }
 
 .scroll-to-top:active {
-  color: #000;
+  color: #1b1717;
+  /* color: #000; */
 }
 
 .links button {
@@ -330,4 +360,8 @@ button {
   text-decoration: none;
   color:black;
   font-weight: bold;
+}
+
+.head p {
+  font-size: 16px;
 }
