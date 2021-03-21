@@ -257,12 +257,16 @@ p, li, a, h3 {
     margin-bottom: 160px;
   }
 
-  .head {
+  /* .head {
     margin-bottom: 120px;
-  }
+  } */
+
+  /* .certifications {
+    margin: 0 auto 160px auto;
+  } */
 
   .certifications {
-    margin: 0 auto 160px auto;
+    margin: 0 auto;
   }
 
   .links button {
