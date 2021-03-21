@@ -204,13 +204,29 @@ body {
   margin-bottom: 20px;
 }
 
+.certifications-list-last {
+  background-color: #f9fcfb;
+  border-radius: 8px;
+  padding: 20px;
+}
+
 .certifications-list a {
   font-size: 20px;
   text-decoration: none;
   color: #ee6f57;
 }
 
+.certifications-list-last a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ee6f57;
+}
+
 .certifications-list a:hover {
+  color: #cb3737;
+}
+
+.certifications-list-last a:hover {
   color: #cb3737;
 }
 
