@@ -49,19 +49,25 @@ body {
     line-height: 1.618;
   }
   h1, h2 {
-    font-size: 3em;
+    /* font-size: 3em; */
+    font-size: 4em;
     letter-spacing: -0.05em;
     line-height: 1.1;
   }
 
   p {
-    max-width: 35em;
+    max-width: 50em;
     /* margin-bottom: 1.618em; */
     margin: 0 auto 1.618em auto;
+    font-size: 25px;
+  }
+
+  li {
+    font-size: 25px;
   }
 
   a {
-    font-size: 40px;
+    font-size: 55px;
     margin-right: 30px;
     transition-duration: 300ms;
   }
@@ -92,8 +98,8 @@ body {
   }
 
   .profile-bg {
-      width: 222.5px;
-      height: 222.5px;
+      width: 445px;
+      height: 445px;
       /* border-bottom: 3px solid gray; */
       /* position: absolute;
       top: 185px;
@@ -112,8 +118,8 @@ body {
 
  .profile-img {
    position: absolute;
-   width: 245px;
-   height: 245px;
+   width: 490px;
+   height: 490px;
    left: 45%;
    visibility: hidden;
    animation: transitionQ 2s ease-in 1s 1 forwards;
@@ -132,21 +138,22 @@ body {
  .cover-para {
      margin-top: 0;
      position: relative;
-     left: -1000px;
+     left: -1500px;
     animation: transitionBy 2s ease-in-out 3s 1 forwards;
  }
 
  @keyframes transitionBy {
      from {
-         left:-1000px;
+         left:-1500px;
      }
      to {
       position:static;
-      left: 1000px;
+      left: 1500px;
      }
  }
 
  h1 {
+   font-size: 5em;
     visibility: hidden;
     animation: transitionOf 300ms ease-in-out 3s 1 forwards;
  }
@@ -171,23 +178,23 @@ body {
  } */
 
  .skills img {
-   width: 245px;
-   height: 245px;
+   width: 490px;
+   height: 490px;
  }
 
  .certifications img {
-  width: 245px;
-  height: 245px;
+  width: 490px;
+  height: 490px;
 }
 
  .projects img {
-  width: 245px;
-  height: 245px;
+  width: 490px;
+  height: 490px;
 }
 
  .socials img {
-  width: 245px;
-  height: 245px;
+  width: 490px;
+  height: 490px;
 }
 
 /* .certifications {
@@ -212,13 +219,13 @@ body {
 }
 
 .certifications-list a {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: #ee6f57;
 }
 
 .certifications-list-last a {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: none;
   color: #ee6f57;
 }
@@ -264,9 +271,24 @@ p, li, a, h3 {
 }
 
 @media only screen and (max-width: 800px) {
+
+  p {
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 18px;
+  }
   
   .profile-img {
     left: 35%;
+    width: 245px;
+    height: 245px;
+  }
+
+  .profile-bg {
+    width: 222.5px;
+    height: 222.5px;
   }
 
   .panel {
@@ -286,10 +308,56 @@ p, li, a, h3 {
     margin: 0 auto;
   } */
 
-  .links button {
+  /* .links button {
     font-size: 15px;
     margin-right: 7px;
+  } */
+
+  #skills, #certifications, #projects {
+    font-size: 30px;
+    margin-right: 7px;
   }
+  
+  h1, h2 {
+    font-size: 3em;
+  }
+  
+  .skills img {
+    width: 245px;
+    height: 245px;
+  }
+ 
+  .certifications img {
+   width: 245px;
+   height: 245px;
+ }
+ 
+  .projects img {
+   width: 245px;
+   height: 245px;
+ }
+ 
+  .socials img {
+   width: 245px;
+   height: 245px;
+ }
+ 
+ .certifications-list a {
+  font-size: 20px;
+}
+
+.certifications-list-last a {
+  font-size: 20px;
+}
+
+a {
+  font-size: 40px;
+}
+
+.git-project {
+  font-size: 22px;
+}
+
 }
 
 /* .social-media {
@@ -348,7 +416,7 @@ button {
 
 .links button {
   font-family: 'Amatic SC', cursive;
-  font-size: 30px;
+  font-size: 50px;
   margin-right: 20px;
   cursor: pointer;
 }
@@ -378,12 +446,12 @@ button {
 }
 
 .git-project {
-  font-size: 22px;
+  font-size: 26px;
   text-decoration: none;
   color:black;
   font-weight: bold;
 }
 
-.head p {
+/* .head p {
   font-size: 16px;
-}
+} */
