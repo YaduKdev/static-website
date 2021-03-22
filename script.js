@@ -28,10 +28,14 @@ $(window).scroll(function() {
     
   }).scroll();
 
+  // Scroll Buttons
+
   const btnScrollToTop = document.querySelector(".scroll-to-top");
   const skillsbtn = document.querySelector("#skills");
   const certificationsbtn = document.querySelector("#certifications");
   const projectsbtn = document.querySelector("#projects");
+
+  // Scroll to Top Button
 
   window.addEventListener("scroll", function() {
     if (window.pageYOffset>650) {
@@ -49,24 +53,34 @@ $(window).scroll(function() {
     });
   });
 
-  skillsbtn.addEventListener("click", function() {
-    window.scrollTo({
-      top: 700,
-      left: 0,
-      behavior: "smooth"
-    });
-  });
+  // Menu Buttons
 
-  certificationsbtn.addEventListener("click", function() {
+  skillsbtn.addEventListener("click", function() {
     if (screen.width>800) {
       window.scrollTo({
-        top: 1300,
+        top: 1200,
         left: 0,
         behavior: "smooth"
       });
     } else {
       window.scrollTo({
-        top: 1700,
+        top: 700,
+        left: 0,
+        behavior: "smooth"
+      });
+    }
+  });
+
+  certificationsbtn.addEventListener("click", function() {
+    if (screen.width>800) {
+      window.scrollTo({
+        top: 2000,
+        left: 0,
+        behavior: "smooth"
+      });
+    } else {
+      window.scrollTo({
+        top: 1500,
         left: 0,
         behavior: "smooth"
       });
@@ -77,13 +91,13 @@ $(window).scroll(function() {
   projectsbtn.addEventListener("click", function() {
     if (screen.width>800) {
       window.scrollTo({
-        top: 2500,
+        top: 2900,
         left: 0,
         behavior: "smooth"
       });
     } else {
       window.scrollTo({
-        top: 2900,
+        top: 2750,
         left: 0,
         behavior: "smooth"
       });
