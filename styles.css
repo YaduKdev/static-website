@@ -199,6 +199,14 @@ button {
     transform: scaleX(1) scaleY(1);
   }
  }
+ 
+ .job-title {
+   font-size: 30px;
+ }
+
+ .job-place {
+  font-size: 27px;
+ }
 
  .cover-para {
      margin-top: 0;
